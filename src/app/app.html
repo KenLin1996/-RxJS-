@@ -1,0 +1,12 @@
+<div>
+  <h1>{{ title() }}</h1>
+
+  <button (click)="start()">開始新的計數器</button>
+  <button (click)="count()">計數</button>
+  <button (click)="error()">發生錯誤</button>
+  <button (click)="complete()">計數完成</button>
+
+  <div>目前計數值：<span #currentCounter>0</span></div>
+  <div>偶數計數值：<span #evenCounter>0</span></div>
+  <div>目前狀態：<span #status>尚未開始</span></div>
+</div>
